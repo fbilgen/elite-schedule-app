@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { TournamentsPage } from '../tournaments/tournaments.page';
 
 
 @Component({
@@ -6,6 +8,10 @@ import { Component } from '@angular/core';
     templateUrl: 'my-teams.page.html'
 })
 export class MyTeamsPage {
-    constructor() {
+    constructor( private nav: NavController) {
+    }
+
+    goToTournaments() {
+        this.nav.navigateForward('tournaments');
     }
 }

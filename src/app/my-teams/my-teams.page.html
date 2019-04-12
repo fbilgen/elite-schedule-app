@@ -1,10 +1,23 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>
-        My Teams
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      My Teams
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-button full (click)="goToTournaments()"> Find a Tournament
+  </ion-button>
+
+  <!--Using html routerLink-->
+<!--   <ion-item ion-button full [routerDirection]="'forward'" [routerLink]="'/tournaments'">
+    <ion-label>
+      Find a Tournament
+    </ion-label>
+  </ion-item> -->
+</ion-content>

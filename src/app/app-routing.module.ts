@@ -6,8 +6,10 @@ const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full' },
   // describe every root? navigation page in application
   { path: 'home', loadChildren: './my-teams/my-teams.module#MyTeamsModule' },
-  { path: 'list', loadChildren: './list/list.module#ListPageModule' },
-  { path: 'tournaments', loadChildren: './tournaments/tournaments.module#TournamentsPageModule' }
+  { path: 'tournaments', loadChildren: './tournaments/tournaments.module#TournamentsPageModule' },
+  { path: 'teams', loadChildren: './teams/teams.module#TeamsPageModule' },
+  { path: 'team-detail', loadChildren: './team-detail/team-detail.module#TeamDetailPageModule' },
+  { path: 'game', loadChildren: './game/game.module#GamePageModule' }
 ];
 
 // This modue is imported in app.module and it's responsible of routing. (No individual Module imports to app.module)
