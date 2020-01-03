@@ -1,9 +1,20 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>teams</ion-title>
+  <ion-toolbar color='secondary'>
+    <ion-back-button>
+    </ion-back-button>
+    <ion-title>Teams</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+<!-- Routing thru router link -->
+<ion-item *ngFor='let team of teams' [routerLink]="'/team-detail/' + team.id" routerDirection='forward'>
+      {{team.id}}
+    </ion-item>
+<!-- Routing thru navigationcontrol -->
+<ion-item *ngFor='let team of teams' (click)='viewDeatil(team)'>
+  {{team.name}}
+</ion-item>
+  </ion-list>
 </ion-content>

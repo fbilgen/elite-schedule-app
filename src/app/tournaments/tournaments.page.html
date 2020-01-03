@@ -1,12 +1,16 @@
 <ion-header>
-  <ion-toolbar>
-      <ion-buttons slot="start">
-          <ion-back-button></ion-back-button>
-        </ion-buttons>
-    <ion-title>Tournaments</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-back-button>
+    </ion-back-button>
+    <ion-title>Select a Tournament</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-list>
+    <ion-item button (click)="itemTapped()">March Madness tournament</ion-item>
+    <ion-item button (click)="itemTapped()">Summer showdown</ion-item>
+  </ion-list>
+
 
 </ion-content>

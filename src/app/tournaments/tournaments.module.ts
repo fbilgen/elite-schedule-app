@@ -23,4 +23,6 @@ const routes: Routes = [
   ],
   declarations: [TournamentsPage]
 })
-export class TournamentsPageModule {}
+export class TournamentsPageModule {
+
+}

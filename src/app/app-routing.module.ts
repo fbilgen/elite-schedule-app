@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'home', loadChildren: './my-teams/my-teams.module#MyTeamsModule' },
   { path: 'tournaments', loadChildren: './tournaments/tournaments.module#TournamentsPageModule' },
   { path: 'teams', loadChildren: './teams/teams.module#TeamsPageModule' },
-  { path: 'team-detail', loadChildren: './team-detail/team-detail.module#TeamDetailPageModule' },
+  { path: 'team-detail/:id', loadChildren: './team-detail/team-detail.module#TeamDetailPageModule' },
   { path: 'game', loadChildren: './game/game.module#GamePageModule' }
 ];
 
